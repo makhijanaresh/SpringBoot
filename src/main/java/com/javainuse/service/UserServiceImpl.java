@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.javainuse.model.User;
 
 
+
 @Service("userService")
-@Transactional
+//@Transactional
 public class UserServiceImpl implements UserService{
 	
 	private static final AtomicLong counter = new AtomicLong();
@@ -92,5 +92,6 @@ public class UserServiceImpl implements UserService{
 	{
 		return i+j;
 	}
+
 
 }
